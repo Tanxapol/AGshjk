@@ -451,13 +451,20 @@ def show_window2():
         )
         main_button.pack(side="left", padx=5, pady=5)
 
+        evaporator_button = tk.Button(
+            top_panel_info,
+            text="Evaporator",
+            command=lambda: show_data(canvas_frame2, "Evaporator"),
+        )
+        evaporator_button.pack(side="left", padx=5, pady=5)
+
         compressor_button = tk.Button(
             top_panel_info,
             text="Compressor",
             command=lambda: show_data(canvas_frame2, "Compressor"),
         )
-
         compressor_button.pack(side="left", padx=5, pady=5)
+        
         condenser_button = tk.Button(
             top_panel_info,
             text="Condenser",
